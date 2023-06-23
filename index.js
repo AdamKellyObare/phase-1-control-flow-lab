@@ -1,41 +1,45 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
-  let distance;{
-    if (distance<400) {
-      return 'This one is on me'}
+function scuberGreetingForFeet(distance){
+  // I've introduced 'comment' and declared it as a variable in the function for it to be exectued as a prompt.
+  let comment;
+    if (distance<=400) {
+      comment = 'This one is on me'}
+    else if (distance>2000 && distance <=2500) {
+      comment = 'I will gladly take your thirty'}
     else if (distance>2500) {
-      return 'No can do'}
-    else if (distance>2000) {
-        return 'I will gladly take your thirty'}
+        comment = 'No can do'
+      }
+      return comment
   }
-};
+
+
 
     // tests continue..});
 
-
-function ternaryCheckCity(){
+// I've used turnery 
+    function ternaryCheckCity(city){
   // Write your code here!
-  let city; {
-    if (city ='NYC' ) 
-    return 'Ok, sounds good.' 
-    else (city ='Pittsburgh') 
-    return 'No,go.'
-    
-  }
+  let comment;
+  city === 'NYC' ? (comment ='Ok, sounds good.') : (comment = 'No go.')
+  return comment
 
-};
+}
 
-function switchOnCharmFromTip(){
-  // Write your code here!
-  let tip;  {
-    if (tip = 'generous') {
-return "Thank you so much.";}
-    else if (tip = 'not generous'){
-    return "Thank you.";}
-    else {
-      console.log ("Bye")
-    }
+function switchOnCharmFromTip(tip){
+  let comment;
+  switch (tip) {
+    case 'generous':
+      comment = 'Thank you so much.';
+      break;
+      case 'not as generous':
+        comment ='Thank you.';
+        break;
+        default:
+          comment = 'Bye.';
+          break;
   }
+  return comment
+}
+  
 
-  }
+  
  
